@@ -16,7 +16,7 @@ public class PiOperation implements Runnable {
     @Override
     public void run() {
         for(double n = this.start; n < this.end; n ++) {
-            sum = sum + (Math.pow(-1, n) / ((2 * n) + 1));
+            this.sum = this.sum + (Math.pow(-1, n) / ((2 * n) + 1));
         }
     }
     
