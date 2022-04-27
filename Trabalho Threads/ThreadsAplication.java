@@ -64,19 +64,10 @@ public class ThreadsAplication {
         return pi;
     }
 
-    public static double calculatePiThreadMedian(double[] values){
-        double sum = 0;
-        for(int i = 0; i < values.length; i ++){
-            sum = sum + values[i];
-        }
-        double median = sum / values.length;
-        return median;
-    }
-
     public static double sumPiThreadValues(double[] values) {
         double total = 0;
         for(int i = 0; i < values.length; i++){
-            System.out.format("thread %d  = %.20f %n", i, values[i]);
+            System.out.format("thread %d  = %.23f %n", i, values[i]);
             total = total + values[i];
         }
         return 4 * total;
